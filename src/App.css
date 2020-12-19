@@ -1,0 +1,7 @@
+.app {
+  /* display: flex; */
+}
+
+button:focus {
+  outline: none !important;
+}

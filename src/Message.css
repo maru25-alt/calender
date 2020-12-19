@@ -1,0 +1,50 @@
+.message {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  color: white;
+}
+
+.message__received {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px !important;
+  /* justify-content: flex-end !important; */
+}
+.message__received > .message__info > .message__content {
+  background-color: greenyellow !important;
+  color: #444;
+}
+
+.message__received > .message__info {
+  margin-right: 10px;
+}
+
+.message__info {
+  margin-left: 10px;
+  /* flex: 1; */
+}
+.message__info h6 {
+  color: #fff !important;
+}
+
+.message__content {
+  background-color: #fff;
+  border-radius: 10px;
+  color: #444;
+  padding: 0 20px;
+  width: fit-content;
+  max-width: 25vw;
+  position: relative;
+}
+p {
+  margin-bottom: 0;
+}
+
+.message__timestamp {
+  /* position: absolute; */
+  color: gray;
+  /* margin-left: 20px; */
+  float: right;
+  font-size: x-small;
+}

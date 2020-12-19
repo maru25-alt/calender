@@ -1,0 +1,12 @@
+.loading__buttonContainer {
+  position: relative;
+}
+
+.button__loading {
+  position: absolute;
+  left: 50%;
+}
+
+.dialog {
+  min-height: 70vh !important;
+}

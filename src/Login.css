@@ -6,21 +6,8 @@
   background-color: #363a3f;
 }
 
-.login > form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 20px;
-  border-bottom: 0;
-}
-
 .login > button {
   width: 300px;
-  background-color: #738adb;
-  color: #eff2f5;
-  font-weight: 800;
-}
-
-.signin-button {
   background-color: #738adb;
   color: #eff2f5;
   font-weight: 800;
@@ -30,29 +17,12 @@
   background-color: black;
   color: #738adb;
 }
-.signin {
-  display: grid;
-  place-items: center;
-}
-.signup {
-  display: grid;
-  place-items: center;
-}
-
-.signin input {
-  padding: 0 auto;
-}
-/* .signin > form,
-.signup > form {
-  background-color: #fff;
-  border-radius: 20px;
-} */
 
 .submit__button {
   position: relative;
 }
 
-.button__loading {
+.spinning {
   position: absolute;
   color: #738adb;
   left: 50%;

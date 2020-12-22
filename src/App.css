@@ -1,7 +1,145 @@
+* {
+  margin: 0;
+}
 .app {
   /* display: flex; */
 }
 
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  border: 1px #fff;
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1;
+  padding: 20px 30px;
+}
+
+ul li {
+  list-style: none;
+}
+
 button:focus {
   outline: none !important;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.navbar {
+  background-color: #363a3f;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  color: #e3e3e3;
+  margin-right: 50px;
+  width: fit-content;
+}
+.nav-item:hover {
+  color: royalblue;
+}
+
+button {
+  width: 100%;
+  border: none;
+  padding: 5px 0;
+  border-radius: 10px;
+  background-color: transparent;
+  margin: 10px 0;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn-danger {
+  background-color: red;
+}
+
+.container {
+  margin: 20px 50px;
+}
+
+.form {
+  width: 50vw;
+}
+.form-group {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+.form-control {
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.form-control input {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.text-danger {
+  color: red;
+}
+
+.send-btn {
+  background-color: royalblue;
+  color: #e3e3e3;
+  padding: 10px 0;
+}
+
+.send-btn:hover {
+  background-color: #363a3f;
+  color: #fff;
+}
+
+.results {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80vw;
+}
+
+.results td,
+.results th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.results tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.results tr:hover {
+  background-color: #ddd;
+}
+
+.results th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: royalblue;
+  color: white;
 }

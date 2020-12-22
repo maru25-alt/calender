@@ -1,14 +1,14 @@
 import firebase from 'firebase'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAMyTHLz6WbqQhWHl9Q9RipzsCwYR7FTeM",
-  authDomain: "blog-comments-7b192.firebaseapp.com",
-  databaseURL: "https://blog-comments-7b192.firebaseio.com",
-  projectId: "blog-comments-7b192",
-  storageBucket: "blog-comments-7b192.appspot.com",
-  messagingSenderId: "102464096079",
-  appId: "1:102464096079:web:3113be7954d83495dea73a",
-  measurementId: "G-GQW60HEFZ0"
+  apiKey: "AIzaSyBm0oqkghr79FsxeztJGcu2YAVAnoz9QAs",
+  authDomain: "calender-app-9d3e2.firebaseapp.com",
+  projectId: "calender-app-9d3e2",
+  storageBucket: "calender-app-9d3e2.appspot.com",
+  messagingSenderId: "716527449284",
+  appId: "1:716527449284:web:25cace782303b00853c591",
+  measurementId: "G-3T4930JECP"
+
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig)

@@ -124,6 +124,9 @@ function Home({user, setUser}) {
                 </thead>
                 
                     <tbody>
+                        {loadingEmails &&  <tr>
+                                 <i class="fa fa-circle-o-notch fa-spin"></i>Loading
+                            </tr>}
                     {emails && emails.map((email, index) => 
                         <tr key={index}>
                         <td>{(email?.sendAt.toDate()).toUTCString()}</td>

@@ -6,24 +6,20 @@
   background-color: #363a3f;
 }
 
-.login > button {
+.login > div > button {
   width: 300px;
   background-color: #738adb;
   color: #eff2f5;
   font-weight: 800;
 }
 
-.login > button:hover {
+.login > div > button:hover {
   background-color: black;
   color: #738adb;
 }
 
-.submit__button {
-  position: relative;
-}
-
-.spinning {
-  position: absolute;
-  color: #738adb;
-  left: 50%;
+.login__heading {
+  text-align: center;
+  color: #efee;
+  margin-bottom: 20px;
 }

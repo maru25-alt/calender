@@ -4,7 +4,7 @@ import './Login.css'
 import { auth, provider } from './firebase'
 import {toast} from 'react-toastify';
 
-const Login = ({history}) => {
+const Login = () => {
     const signIn = () => {
         auth.signInWithPopup(provider)
         .then((res) => {
@@ -33,14 +33,16 @@ const Login = ({history}) => {
 
     return (
         <div className='login' >
-             <div className="login__logo">
-                <h2>Welcome to app</h2>
-                <p className="text-center">Create your account</p>
+            <div>
+                <div className="login__heading">
+                    <h1>Welcome to app</h1>
+                    <p className="">Create your account</p>
+                </div>
+                <Button onClick={signIn}> 
+                <img width="30" src="https://beginnersbook.com/wp-content/uploads/2013/09/Google-plus-icon-300x300.png" alt=""/>
+                Signin with Google
+                </Button>
             </div>
-            <Button onClick={signIn}> 
-            <img width="30" src="https://beginnersbook.com/wp-content/uploads/2013/09/Google-plus-icon-300x300.png" alt=""/>
-              Signin with Google
-            </Button>
         </div>
     )
 }

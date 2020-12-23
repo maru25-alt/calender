@@ -35,11 +35,11 @@ function Home({user, setUser}) {
     }
 
     const handleSendEmail = () => {
-      console.log(value);
+      console.log( typeof(value.toDateString()));
       setloading(true);
       axios.post('/api/send_email', {
           email: email,
-          calendar: value.toString()
+          calendar: value.toDateString()
       }).then(res => {
           db.collection('messages').add({
               email: email,
@@ -111,7 +111,7 @@ function Home({user, setUser}) {
                         value={value}
                     />
                 </div>
-                <button className="send-btn"> {loading && <i class="fa fa-spinner fa-spin"></i>} Send Email</button>
+                <button className="send-btn"> {loading && <i className="fa fa-spinner fa-spin"></i>} Send Email</button>
             </form>
              :
             <table className="container results">
@@ -125,7 +125,7 @@ function Home({user, setUser}) {
                 
                     <tbody>
                         {loadingEmails &&  <tr>
-                                 <i class="fa fa-circle-o-notch fa-spin"></i>Loading
+                                 <i className="fa fa-circle-o-notch fa-spin"></i>Loading
                             </tr>}
                     {emails && emails.map((email, index) => 
                         <tr key={index}>
